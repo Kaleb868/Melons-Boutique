@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Melons Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.svg" alt="Melons Boutique Logo">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <a href="cart.html" style="color: inherit; text-decoration: none;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 2L7 6H21L19 2H9Z"></path>
+                            <path d="M7 6L5 20C4.9 21.1 5.8 22 7 22H17C18.2 22 19.1 21.1 19 20L17 6H7Z"></path>
+                            <path d="M9 10V16"></path>
+                            <path d="M15 10V16"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Products</h1>
+            <p class="page-subtitle">Browse our complete collection of unique items</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="container">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-category="all">All Products</button>
+                    <button class="filter-tab" data-category="bags">Bags</button>
+                    <button class="filter-tab" data-category="footwear">Footwear</button>
+                    <button class="filter-tab" data-category="stationary">Stationary</button>
+                    <button class="filter-tab" data-category="home-decor">Home Decor</button>
+                    <button class="filter-tab" data-category="hair-supplies">Hair Supplies</button>
+                    <button class="filter-tab" data-category="clothes">Clothes</button>
+                    <button class="filter-tab" data-category="jewelry">Jewelry</button>
+                </div>
+                <div class="sort-dropdown">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort" name="sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-container">
+                <!-- Bags -->
+                <div class="product-card" data-category="bags">
+                    <span class="product-badge">Bags</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Tropical Canvas Tote Bag</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(124)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$29.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bags">
+                    <span class="product-badge">Bags</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Leather Crossbody Bag</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(98)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$49.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bags">
+                    <span class="product-badge">Bags</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Watermelon Mini Backpack</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(76)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$39.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footwear -->
+                <div class="product-card" data-category="footwear">
+                    <span class="product-badge product-badge-footwear">Footwear</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Coral Pink Sneakers</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$79.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="footwear">
+                    <span class="product-badge product-badge-footwear">Footwear</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Summer Sandals</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(145)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$34.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="footwear">
+                    <span class="product-badge product-badge-footwear">Footwear</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Tropical Print Flip Flops</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(67)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$19.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stationary -->
+                <div class="product-card" data-category="stationary">
+                    <span class="product-badge product-badge-stationary">Stationary</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Watermelon Notebook Set</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$14.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="stationary">
+                    <span class="product-badge product-badge-stationary">Stationary</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Tropical Pen Set</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(92)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$9.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="stationary">
+                    <span class="product-badge product-badge-stationary">Stationary</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Planner & Sticker Bundle</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(203)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$24.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home Decor -->
+                <div class="product-card" data-category="home-decor">
+                    <span class="product-badge product-badge-decor">Home Decor</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Tropical Wall Art Canvas</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(67)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$44.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="home-decor">
+                    <span class="product-badge product-badge-decor">Home Decor</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Tropical Cushion Covers</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(87)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$34.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="home-decor">
+                    <span class="product-badge product-badge-decor">Home Decor</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Decorative Throw Blanket</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(112)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$59.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hair Supplies -->
+                <div class="product-card" data-category="hair-supplies">
+                    <span class="product-badge product-badge-hair">Hair Supplies</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Silk Hair Scrunchies Set</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(203)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$19.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="hair-supplies">
+                    <span class="product-badge product-badge-hair">Hair Supplies</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Hair Clips Collection</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(178)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$12.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="hair-supplies">
+                    <span class="product-badge product-badge-hair">Hair Supplies</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Headband Variety Pack</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(134)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$16.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clothes -->
+                <div class="product-card" data-category="clothes">
+                    <span class="product-badge product-badge-clothes">Clothes</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Summer Floral Dress</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(142)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$149.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothes">
+                    <span class="product-badge product-badge-clothes">Clothes</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Tropical Print Top</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(189)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$39.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothes">
+                    <span class="product-badge product-badge-clothes">Clothes</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Beach Cover-Up</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(95)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$54.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jewelry -->
+                <div class="product-card" data-category="jewelry">
+                    <span class="product-badge product-badge-jewelry">Jewelry</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Coral Statement Necklace</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(98)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$59.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry">
+                    <span class="product-badge product-badge-jewelry">Jewelry</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Beaded Bracelet Set</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(167)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$24.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jewelry">
+                    <span class="product-badge product-badge-jewelry">Jewelry</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Tropical Earring Collection</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(123)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$29.99</span>
+                            <button class="btn btn-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">Melons Boutique</h4>
+                    <p class="footer-text">Your one-stop shop for bags, footwear, stationary, home decor, hair supplies, clothes, and jewelry in Trinidad and Tobago.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?category=bags">Bags</a></li>
+                        <li><a href="products.html?category=footwear">Footwear</a></li>
+                        <li><a href="products.html?category=stationary">Stationary</a></li>
+                        <li><a href="products.html?category=home-decor">Home Decor</a></li>
+                        <li><a href="products.html?category=hair-supplies">Hair Supplies</a></li>
+                        <li><a href="products.html?category=clothes">Clothes</a></li>
+                        <li><a href="products.html?category=jewelry">Jewelry</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>Trinidad and Tobago</li>
+                        <li>+1 (868) XXX-XXXX</li>
+                        <li>info@melonsboutique.com</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" class="footer-social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="footer-social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                                <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="footer-social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Melons Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
